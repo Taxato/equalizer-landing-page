@@ -1,0 +1,311 @@
+:root {
+	--color-blue: #66e2dc;
+	--color-orange: #fa7453;
+	--color-yellow: #ffb964;
+
+	--color-white: #fcfaf9;
+	--color-black: #191826;
+
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+	background-color: var(--color-white);
+	color: var(--color-black);
+
+	background-image: url("./public/assets/bg-main-desktop.png");
+
+	background-position: top -20rem left -10rem;
+
+	margin-inline: 12rem;
+	margin-top: 6rem;
+}
+
+h1 {
+	font-size: 5.5rem;
+	line-height: 5.5rem;
+	letter-spacing: -0.065rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 2.6rem;
+	line-height: 3.25rem;
+	font-weight: 700;
+}
+
+.p1 {
+	font-size: 1.25rem;
+	line-height: 2.125rem;
+}
+
+.p2 {
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+
+.hero {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
+	width: 80%;
+
+	p {
+		max-width: 40em;
+	}
+}
+
+.logo {
+	width: 12rem;
+}
+
+.deco-1 {
+	position: absolute;
+	right: 0;
+	top: -2.125rem;
+	z-index: -1;
+}
+
+main {
+	margin-top: 20rem;
+	margin-bottom: 20rem;
+
+	max-width: 80rem;
+	margin-inline: auto;
+
+	position: relative;
+	background-color: var(--color-black);
+	border-radius: 1rem;
+
+	height: 40rem;
+}
+
+.app-preview {
+	position: absolute;
+	width: 20rem;
+	top: -12rem;
+	left: 8rem;
+	z-index: 10;
+}
+
+.deco-2 {
+	position: absolute;
+	left: 22rem;
+}
+
+.info {
+	position: absolute;
+	z-index: 20;
+	background-color: var(--color-orange);
+	border-radius: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	width: 22rem;
+
+	right: 8rem;
+	top: 8rem;
+
+	color: var(--color-white);
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+}
+
+.price span {
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.btn {
+	text-decoration: none;
+	height: 4rem;
+	border-radius: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	font-size: 1.25rem;
+	font-weight: bold;
+
+	transition: background-color 300ms;
+}
+
+.ios {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
+
+.ios:hover,
+.ios:focus {
+	background-color: var(--color-blue);
+}
+
+.android {
+	background-color: var(--color-white);
+	color: black;
+}
+
+.android:hover,
+.android:focus {
+	background-color: var(--color-yellow);
+}
+
+footer {
+	margin-bottom: 10rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+footer p {
+	width: 24rem;
+	padding-right: 20rem;
+}
+
+.mail {
+	text-decoration: none;
+	color: inherit;
+
+	font-weight: bold;
+}
+
+.socials {
+	display: flex;
+	gap: 1rem;
+}
+
+.socials svg {
+	transition: fill 300ms;
+	fill: var(--color-black);
+}
+
+.socials a:hover,
+.socials a:focus {
+	svg {
+		fill: var(--color-orange);
+	}
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+	body {
+		margin-inline: 2rem;
+
+		background-position: top -10rem right -20rem;
+	}
+
+	.deco-1 {
+		right: -2rem;
+	}
+
+	.deco-2 {
+		left: 16rem;
+		top: -4rem;
+	}
+
+	main {
+		margin-bottom: 10rem;
+	}
+
+	.info {
+		right: 2rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+
+		margin-bottom: 0;
+
+		h2 {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.app-preview {
+		left: 3rem;
+	}
+
+	footer {
+		flex-wrap: wrap;
+
+		margin-bottom: 2rem;
+
+		p {
+			padding-right: 0rem;
+			margin-right: 0rem;
+			width: 20rem;
+		}
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+	body {
+		background-position: top -20rem left -60rem;
+		margin-inline: 0;
+	}
+
+	body > .logo {
+		margin-left: 2rem;
+	}
+
+	.deco-1 {
+		display: none;
+	}
+
+	.deco-2 {
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 25rem;
+	}
+
+	.hero {
+		margin-left: 2rem;
+
+		h1 {
+			font-size: 3.5rem;
+			line-height: 3.5rem;
+		}
+	}
+
+	.app-preview {
+		left: 0;
+		right: 0;
+		top: -8rem;
+		margin-inline: auto;
+	}
+
+	.info {
+		width: auto;
+		top: 35rem;
+		left: 0;
+		right: 0;
+	}
+
+	main {
+		margin-top: 10rem;
+		margin-bottom: 40rem;
+	}
+
+	footer {
+		margin-left: 2rem;
+		flex-direction: column;
+		gap: 2rem;
+	}
+}

@@ -11,10 +11,7 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
-    -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,8 +30,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-vanilla-html-and-css-Vc5zd_u3gV)
+-   Live Site URL: [Github pages](https://taxato.github.io/equalizer-landing-page/)
 
 ## My process
 
@@ -42,8 +39,8 @@ Users should be able to:
 
 -   Semantic HTML5 markup
 -   CSS custom properties
--   Flexbox
 -   CSS Media queries
+-   Flexbox
 
 ### What I learned
 
